@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { CategoriesRoutingModule } from './categories-routing.module';
 import { CategoryListComponent }   from './category-list/category-list.component';
 import { CategoryFormComponent }   from './category-form/category-form.component';
+import { CategoryService }         from './shared/category.service';
 
 @NgModule({
   declarations: [CategoryListComponent, CategoryFormComponent],
@@ -11,6 +12,8 @@ import { CategoryFormComponent }   from './category-form/category-form.component
     CommonModule,
     CategoriesRoutingModule,
   ],
+  providers: [
+  ]
 })
 export class CategoriesModule {
 }
