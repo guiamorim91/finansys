@@ -10,25 +10,25 @@
       "prefix": "app",
       "schematics": {
         "@schematics/angular:class": {
-          "skipTests": true
+          "spec": false
         },
         "@schematics/angular:component": {
-          "skipTests": true
+          "spec": false
         },
         "@schematics/angular:directive": {
-          "skipTests": true
+          "spec": false
         },
         "@schematics/angular:guard": {
-          "skipTests": true
+          "spec": false
         },
         "@schematics/angular:module": {
-          "skipTests": true
+          "spec": false
         },
         "@schematics/angular:pipe": {
-          "skipTests": true
+          "spec": false
         },
         "@schematics/angular:service": {
-          "skipTests": true
+          "spec": false
         }
       },
       "architect": {
@@ -49,15 +49,14 @@
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/toastr/build/toastr.min.css",
               "node_modules/primeicons/primeicons.css",
-              "node_modules/primeng/resources/themes/saga-blue/theme.css",
+              "node_modules/primeng/resources/themes/nova-light/theme.css",
               "node_modules/primeng/resources/primeng.min.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
               "node_modules/chart.js/dist/Chart.bundle.js"
-            ],
-            "es5BrowserSupport": true
+            ]
           },
           "configurations": {
             "production": {
