@@ -1,6 +1,7 @@
-import { Category } from '../../categories/shared/category.model';
+import { Category }     from '../../categories/shared/category.model';
+import { BaseResource } from '../../../shared/models/base-resource.model';
 
-export class Entry {
+export class Entry extends BaseResource {
   constructor(
     public id?: number,
     public name?: string,
@@ -12,6 +13,7 @@ export class Entry {
     public categoryId?: number,
     public category?: Category,
   ) {
+    super();
   }
 
   static types = {
