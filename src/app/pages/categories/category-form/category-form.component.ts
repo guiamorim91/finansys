@@ -1,5 +1,5 @@
 import { Component, Injector }                from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Validators } from '@angular/forms';
 
 import { Category }                  from '../shared/category.model';
 import { CategoryService }           from '../shared/category.service';
