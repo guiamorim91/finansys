@@ -1,5 +1,5 @@
-import { Category }     from '../../categories/shared/category.model';
-import { BaseResource } from '../../../shared/models/base-resource.model';
+import { Category }              from '../../categories/shared/category.model';
+import { BaseResource }          from '../../../shared/models/base-resource.model';
 
 export class Entry extends BaseResource {
   constructor(
@@ -20,6 +20,10 @@ export class Entry extends BaseResource {
     expense: 'Despesa',
     revenue: 'Receita'
   };
+
+  static fromJson(jsonData: any): Entry {
+    return Object.assign(new Entry(), jsonData);
+  }
 
   get paidText(): string {
     return this.paid ? 'Pago' : 'Pendente';
