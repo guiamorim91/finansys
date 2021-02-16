@@ -1,15 +1,5 @@
 <app-breadcrumb [itens]="[{text: 'Categorias', link: '/categories'}, {text: pageTitle}]"></app-breadcrumb>
-
-<div class="row mb-4">
-  <div class="col-md">
-    <h1 class="h2 border-left pl-2">
-      {{ pageTitle }}
-    </h1>
-  </div>
-  <div class="col-md">
-    <a routerLink="/categories" class="btn btn-light float-right"><< Voltar</a>
-  </div>
-</div>
+<app-header [page-title]="pageTitle" button-class="btn-light" button-link="/categories" button-text="<< Voltar"></app-header>
 
 <form [formGroup]="resourceForm" (submit)="submitForm()">
   <div class="card">
