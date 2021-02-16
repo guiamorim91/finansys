@@ -82,4 +82,13 @@ export class EntryFormComponent extends BaseResourceFormComponent<Entry> {
   private loadCategories() {
     this.categoryService.getAll().subscribe(data => this.categories = data);
   }
+
+  protected creationPageTitle(): string {
+    return 'Cadastro de Novo Lançamento';
+  }
+
+  protected editionPageTitle(): string {
+    const resourceName = this.resource.name || '';
+    return 'Editando Lançamento: ' + resourceName;
+  }
 }
