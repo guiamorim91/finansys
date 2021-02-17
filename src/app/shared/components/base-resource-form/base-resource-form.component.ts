@@ -1,4 +1,4 @@
-import { AfterContentChecked, Injector, OnInit } from '@angular/core';
+import { AfterContentChecked, Injector, OnInit, Directive } from '@angular/core';
 import { FormBuilder, FormGroup }    from '@angular/forms';
 import { ActivatedRoute, Router }                from '@angular/router';
 
@@ -7,6 +7,7 @@ import toastr                  from 'toastr';
 import { BaseResourceService } from '../../services/base-resource.service';
 import { BaseResource }        from '../../models/base-resource.model';
 
+@Directive()
 export abstract class BaseResourceFormComponent<T extends BaseResource> implements OnInit, AfterContentChecked {
 
   currentAction: string;

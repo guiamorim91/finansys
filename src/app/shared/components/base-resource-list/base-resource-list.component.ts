@@ -1,8 +1,9 @@
-import { OnInit } from '@angular/core';
+import { OnInit, Directive } from '@angular/core';
 
 import { BaseResource }        from '../../models/base-resource.model';
 import { BaseResourceService } from '../../services/base-resource.service';
 
+@Directive()
 export abstract class BaseResourceListComponent<T extends BaseResource> implements OnInit {
 
   resources: T[] = [];
