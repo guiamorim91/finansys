@@ -12,4 +12,7 @@ export class ReportsComponent implements OnInit {
   ngOnInit() {
   }
 
+  generateReports() {
+    alert('generating reports...');
+  }
 }

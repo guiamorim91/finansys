@@ -3,6 +3,6 @@
     <h1 class="h2 border-left pl-2">{{ pageTitle }}</h1>
   </div>
   <div class="col-md-3 text-right">
-    <a [routerLink]="buttonLink" class="btn" [ngClass]="buttonClass">{{ buttonText }}</a>
+    <a [routerLink]="buttonLink" class="btn" [ngClass]="buttonClass" [hidden]="buttonHidden">{{ buttonText }}</a>
   </div>
 </div>

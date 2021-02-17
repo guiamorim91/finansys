@@ -11,6 +11,7 @@ export class HeaderComponent implements OnInit {
   @Input('button-class') buttonClass: string;
   @Input('button-text') buttonText: string;
   @Input('button-link') buttonLink: string;
+  @Input('button-hidden') buttonHidden: boolean = false;
 
   constructor() { }
 
