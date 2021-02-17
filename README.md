@@ -2,7 +2,7 @@
 
 Projeto tem o objetivo de organizar a aplicação de forma produtiva, abstraindo e criando componentes reutilizaveis.
 
-Componentes utilizados:
+Utilizados:
 
 - Bootstrap 4
 - NgPrime Calendar
@@ -11,6 +11,6 @@ Componentes utilizados:
 ### Configuração do projeto
 
 1. Execute `npm install` para instalar as dependencias do projeto.
-2. Exexute `ng serve` para iniciar o servidor da aplicação. Navegue até `http://localhost:4200/` :smiley:.
+2. Exexute `ng serve` para iniciar o servidor da aplicação. Navegue até `http://localhost:4200/`. :smiley:
 
 :books: https://www.udemy.com/course/angular-avancado/
